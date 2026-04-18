@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 10% 20%, #1c1c2e, #0a0a0a 70%);
+    overflow: hidden;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 209, 255, 0.05);
+    border-radius: 50%;
+    filter: blur(100px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-form {
+    width: 480px; 
+    min-height: 580px;
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 30px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.6);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 40px 50px; 
+}
+
+.minimal-logo {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-subtitle {
+    font-size: 13px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.03); 
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px; 
+    padding: 0 18px 0 50px; 
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: #00D1FF; /* Tu acento neón */
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.form-options {
+    text-align: right;
+    margin: 10px 0 30px 0;
+}
+
+.forgot-link, .register-link {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.forgot-link:hover, .register-link:hover {
+    color: #00D1FF;
+}
+
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-primary-neon {
+    width: 100%;
+    height: 50px;
+    background: #00D1FF;
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 12px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 209, 255, 0.15); 
+}
+
+.btn-primary-neon:hover {
+    background: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 209, 255, 0.3); 
+}
+
+.social-signin {
+    margin-top: auto;
+}
+
+.divider {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 0;
+}
+
+.divider span {
+    background: #12121c; 
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.5); 
+    font-size: 11px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    font-size: 18px;
+    background: transparent;
+}
+
+.social-btn i { color: white; }
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.mail:hover {
+    border-color: #db4a39; 
+    background: rgba(219, 74, 57, 0.1); 
+}
+
+.fb:hover { 
+    border-color: #3b5999; 
+    background: rgba(59, 89, 153, 0.1); 
+}
+
+.tw:hover { 
+    border-color: #1da1f2; 
+    background: rgba(29, 161, 242, 0.1); 
+}
+
+.ig:hover { 
+    border-color: #dc2743; 
+    background: rgba(220, 39, 67, 0.1); 
+}
