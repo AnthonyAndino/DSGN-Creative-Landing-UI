@@ -66,11 +66,11 @@ This project is part of my portfolio as a growing developer.
 
 ## Vista previa / Preview
 
-### 🏠 Página principal / Landing Page
+### Página principal / Landing Page
 ![Landing](assets/landing.png)
 
-### 🔐 Inicio de sesión / Login
+### Inicio de sesión / Login
 ![Login](assets/login.png)
 
-### 📝 Registro / Register
+### Registro / Register
 ![Register](assets/register.png)
