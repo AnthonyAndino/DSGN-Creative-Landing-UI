@@ -63,3 +63,14 @@ Includes a landing page, login, and registration with glassmorphism style and ne
 ### Note
 
 This project is part of my portfolio as a growing developer.
+
+## Vista previa / Preview
+
+### 🏠 Página principal / Landing Page
+![Landing](assets/landing.png)
+
+### 🔐 Inicio de sesión / Login
+![Login](assets/login.png)
+
+### 📝 Registro / Register
+![Register](assets/register.png)
